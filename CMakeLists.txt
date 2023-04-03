@@ -12,6 +12,7 @@ target_include_directories(garrysmod_detouring PUBLIC
 )
 # target_include_directories(garrysmod_detouring PRIVATE include/scanning)
 target_link_libraries(garrysmod_detouring ${CMAKE_DL_LIBS})
+set_target_properties(garrysmod_detouring PROPERTIES FOLDER "garrysmod")
 
 # Let everyone know that scanning was included
 set(DETOURING_FOUND TRUE CACHE INTERNAL "DETOURING_FOUND")
