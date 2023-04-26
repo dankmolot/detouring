@@ -5,7 +5,7 @@ add_library(garrysmod_detouring STATIC EXCLUDE_FROM_ALL hde/src/hde.c ${MINHOOK_
 add_library(gmod::detouring ALIAS garrysmod_detouring)
 
 target_include_directories(garrysmod_detouring PRIVATE include/detouring)
-target_include_directories(garrysmod_detouring PUBLIC
+target_include_directories(garrysmod_detouring SYSTEM PUBLIC
     include
     hde/include
     minhook/include
